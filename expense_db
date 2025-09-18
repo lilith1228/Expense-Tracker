@@ -1,0 +1,11 @@
+CREATE DATABASE expense_db;
+
+USE expense_db;
+
+CREATE TABLE expenses (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    date DATE NOT NULL,
+    category VARCHAR(50),
+    amount DOUBLE NOT NULL,
+    note VARCHAR(255)
+);
